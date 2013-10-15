@@ -1,0 +1,17 @@
+SetEnv APPLICATION_ENV development
+SetEnv APP_NAME lk_welt_ru
+AddDefaultCharset UTF-8
+Options +FollowSymLinks
+Options -Indexes
+IndexIgnore */*
+RewriteEngine on
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
+AddType text/x-component .htc
+Header set X-UA-Compatible "IE=edge"

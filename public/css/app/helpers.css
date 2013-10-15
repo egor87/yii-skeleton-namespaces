@@ -1,0 +1,98 @@
+/*
+* Helpers
+*/
+.relativier {
+   position: relative;
+}
+.clearer {
+	clear:both;
+}
+.centerer {
+    text-align: center;
+}
+.justify {
+	text-align:justify;
+	text-indent: 1.5em;
+}
+.borderer {
+    border: 1px solid #f00;
+}
+.no-border {
+	border:none !important;
+}
+.hidden {
+    display: none;
+}
+.hidden-imp {
+    display: none !important;
+}
+
+.blocker {
+    display: block;
+}
+
+.inliner {
+    display: inline;
+}
+
+.nobrer {
+    white-space: nowrap;
+}
+
+.overflover {
+    overflow: hidden;
+}
+
+.smaller {
+    font-size: 90%;
+}
+.bolder {
+	font-weight:bolder;
+}
+.underliner {
+	text-decoration:underline;
+}
+
+.grayer {
+    color: #a3a3a3;
+}
+.floater {
+   float: left;
+   _clear: right;
+}
+
+.floater-right {
+   float: right;
+   _clear: left;
+} 
+
+/* Clear */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:before,
+.clearfix:after
+{
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after
+{
+  clear: both;
+  //display: inline-block;
+}
+
+.noselect {
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	user-select: none;
+}
